@@ -4,7 +4,7 @@ import streamlit as st
 
 
 # loading the saved model
-scaler, loaded_model = pickle.load(open('C:/diabeties/full diabetis predictive project/trained_model.sav', 'rb'))
+scaler, loaded_model = pickle.load(open('trained_model.sav', 'rb'))
 
 # creating a function for prediction
 def diabetes_prediction(input_data):
@@ -68,4 +68,5 @@ with st.sidebar:
 
     
 if __name__ == '__main__' :
+
     main()
